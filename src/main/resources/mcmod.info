@@ -1,16 +1,16 @@
 [
 {
-  "modid": "WitchingGadgets",
-  "name": "Witching Gadgets",
+  "modid": "${modId}",
+  "name": "${modName}",
   "description": "It's a kind of magic",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "version": "${modVersion}",
+  "mcversion": "${minecraftVersion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["BluSunrize", "KryptonCaptain"],
   "credits": "",
   "logoFile": "assets/witchinggadgets/logo.png",
   "screenshots": [],
-  "dependencies": ["Thaumcraft","TravellersGear"]
+  "dependencies": ["Thaumcraft","TravellersGear","gregtech","dreamcraft"]
 }
 ]
