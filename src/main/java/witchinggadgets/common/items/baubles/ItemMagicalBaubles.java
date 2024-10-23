@@ -39,7 +39,7 @@ public class ItemMagicalBaubles extends Item
 
     // String[] subNames = {"ringSocketed_gold","ringSocketed_thaumium","ringSocketed_silver"};
     public static String[] subNames = { "shouldersDoublejump", "shouldersKnockback", "vambraceStrength",
-            "vambraceHaste", "ringLuck", "titleCrimsonCult", "ringSniper" };
+            "vambraceHaste", "ringLuck", "ringSniper", "titleCrimsonCult" };
     IIcon[] icons = new IIcon[subNames.length];
     public static HashSet<String> bowSpeedPlayers = new HashSet<String>();
 
@@ -130,7 +130,7 @@ public class ItemMagicalBaubles extends Item
 
     @Override
     public void getSubItems(Item item, CreativeTabs tab, List itemList) {
-        for (int i = 0; i < subNames.length; i++) if (i == 4) {
+        for (int i = 0; i < subNames.length; i++) if (i == 5) {
             itemList.add(getItemWithTitle(new ItemStack(this, 1, i), Lib.TITLE + "crimsonCultist"));
             itemList.add(getItemWithTitle(new ItemStack(this, 1, i), Lib.TITLE + "crimsonKnight"));
             itemList.add(getItemWithTitle(new ItemStack(this, 1, i), Lib.TITLE + "crimsonPraetor"));

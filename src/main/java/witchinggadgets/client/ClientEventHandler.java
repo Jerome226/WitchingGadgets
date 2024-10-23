@@ -408,9 +408,9 @@ public class ClientEventHandler {
         IInventory baubles = BaublesApi.getBaubles(event.entity);
         if (Utilities.isPlayerUsingBow(event.entity) && baubles != null
                 && (OreDictionary
-                        .itemMatches(new ItemStack(WGContent.ItemMagicalBaubles, 1, 6), baubles.getStackInSlot(1), true)
+                        .itemMatches(new ItemStack(WGContent.ItemMagicalBaubles, 1, 5), baubles.getStackInSlot(1), true)
                         || OreDictionary.itemMatches(
-                                new ItemStack(WGContent.ItemMagicalBaubles, 1, 6),
+                                new ItemStack(WGContent.ItemMagicalBaubles, 1, 5),
                                 baubles.getStackInSlot(2),
                                 true))) {
             if (event.entity.isSneaking()) event.newfov = .25f;
