@@ -64,6 +64,9 @@ public class TileEntityBlastfurnace extends TileEntityWGBase implements IEssenti
         if (position == 10 || position == 12 || position == 14 || position == 16) {
             TileEntityBlastfurnace master = (TileEntityBlastfurnace) worldObj
                     .getTileEntity(masterPos[0], masterPos[1], masterPos[2]);
+
+            if (master == null) return;
+
             if (master.speedupTick <= 0)
                 master.speedupTick = VisNetHandler.drainVis(worldObj, xCoord, yCoord, zCoord, Aspect.FIRE, 5);
         }
